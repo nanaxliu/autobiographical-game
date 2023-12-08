@@ -12,11 +12,15 @@ public class pickUp : MonoBehaviour
 		enteredPickUpArea = true;
 	}
 	
+	private void OnTriggerExit2D(Collider2D other)
+	{
+		enteredPickUpArea = false;
+	}
+	
 	void Update()
 	{
 		if ((enteredPickUpArea == true) && Input.GetKeyDown(KeyCode.X))
 		{
-			Debug.Log("picked up");
 			stuff.gameObject.SetActive(false);
 			//also play a sound eventually
 		}
