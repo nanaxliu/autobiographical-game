@@ -6,6 +6,8 @@ public class startGame : MonoBehaviour
 {
     public Dialogue dialogue;
 	
+	public GameObject nextDialogue;
+	
 	void Update()
 	{
 		GameObject varGameObject = GameObject.FindWithTag("Player");
@@ -16,6 +18,8 @@ public class startGame : MonoBehaviour
 		{
 			
 			FindObjectOfType<dialogueManager>().StartDialogue(dialogue);
+			
+			nextDialogue.gameObject.SetActive(true);
 		
 			gameObject.SetActive(false);
 		}

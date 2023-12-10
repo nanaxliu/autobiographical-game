@@ -5,10 +5,20 @@ using TMPro;
 
 public class dialogueTrigger : MonoBehaviour
 {
+	//dialogue i want to display
     public Dialogue dialogue;
 	
-	public void TriggerDialogue()
+	//check if previous dialogue is done
+	public dialogueManager diaDone;
+	
+	void Update()
 	{
-		FindObjectOfType<dialogueManager>().StartDialogue(dialogue);
+		
+		if (diaDone.dialogueEnded == true)
+			{
+				FindObjectOfType<dialogueManager>().StartDialogue(dialogue);
+		
+				gameObject.SetActive(false);
+			}
 	}
 }

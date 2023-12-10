@@ -10,13 +10,26 @@ public class playNextDialogue : MonoBehaviour
 	//check if previous dialogue is done
 	public dialogueManager diaDone;
 	
+	//so you can enable next dialogue gameobject
+	public GameObject nextDialogue;
+	
 	void Update()
 	{
-		if (diaDone.dialogue1Ended == true)
+		
+		if (diaDone.dialogueEnded == true)
 			{
 				FindObjectOfType<dialogueManager>().StartDialogue(dialogue);
-		
-				gameObject.SetActive(false);
+				
+				if (diaDone.dialogueEnded == false)
+				{
+					Debug.Log("not done talking");
+						if (diaDone.dialogueEnded == false)
+						{
+							nextDialogue.gameObject.SetActive(true);
+							gameObject.SetActive(false);
+						}
+				}
 			}
+			
 	}
 }

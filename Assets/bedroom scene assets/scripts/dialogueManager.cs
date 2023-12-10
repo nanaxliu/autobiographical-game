@@ -14,17 +14,18 @@ public class dialogueManager : MonoBehaviour
 	
 	private Queue<string> sentences;
 	
-	public bool dialogue1Ended = true;
+	public bool dialogueEnded = true;
 	
     void Start()
     {
-		dialogue1Ended = false;
+		dialogueEnded = false;
 		
         sentences = new Queue<string>();
     }
 	
 	public void StartDialogue(Dialogue dialogue)
 	{
+		dialogueEnded = false;
 		
 		GameObject varGameObject = GameObject.FindWithTag("Player");
 
@@ -60,12 +61,12 @@ public class dialogueManager : MonoBehaviour
 	
 	IEnumerator TypeSentence (string sentence)
 	{
-		yield return new WaitForSeconds(0.06f);
+		yield return new WaitForSeconds(0.03f);
 		dialogueText.text = "";
 		foreach (char letter in sentence.ToCharArray())
 		{
 			dialogueText.text += letter;
-			yield return new WaitForSeconds(0.06f);
+			yield return new WaitForSeconds(0.03f);
 		}
 	}
 	
@@ -73,7 +74,7 @@ public class dialogueManager : MonoBehaviour
 	{
 		animator.SetBool("IsOpen", false );
 		
-		dialogue1Ended = true;
+		dialogueEnded = true;
 		
 		GameObject varGameObject = GameObject.FindWithTag("Player");
 
