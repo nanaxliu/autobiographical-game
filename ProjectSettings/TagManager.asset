@@ -47,6 +47,9 @@ TagManager:
   - name: player
     uniqueID: 1585536195
     locked: 0
+  - name: npc
+    uniqueID: 3259092609
+    locked: 0
   - name: ui
     uniqueID: 980892405
     locked: 0

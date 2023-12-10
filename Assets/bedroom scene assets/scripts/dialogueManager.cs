@@ -14,13 +14,22 @@ public class dialogueManager : MonoBehaviour
 	
 	private Queue<string> sentences;
 	
+	public bool dialogue1Ended = true;
+	
     void Start()
     {
+		dialogue1Ended = false;
+		
         sentences = new Queue<string>();
     }
 	
 	public void StartDialogue(Dialogue dialogue)
 	{
+		
+		GameObject varGameObject = GameObject.FindWithTag("Player");
+
+		varGameObject.GetComponent<player>().enabled = false;
+		
 		animator.SetBool("IsOpen", true);
 		
 		nameText.text = dialogue.name;
@@ -63,6 +72,14 @@ public class dialogueManager : MonoBehaviour
 	void EndDialogue()
 	{
 		animator.SetBool("IsOpen", false );
+		
+		dialogue1Ended = true;
+		
+		GameObject varGameObject = GameObject.FindWithTag("Player");
+
+		varGameObject.GetComponent<player>().enabled = true;
+		
+		
 	}
 
 }
