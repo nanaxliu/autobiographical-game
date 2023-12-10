@@ -44,6 +44,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: luggage items
+    uniqueID: 3967504971
+    locked: 0
   - name: player
     uniqueID: 1585536195
     locked: 0

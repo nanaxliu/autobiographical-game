@@ -10,6 +10,8 @@ public class putDown : MonoBehaviour
 	public GameObject stuff1;
 	public GameObject stuff2;
 	
+	public AudioSource audioPlayer;
+	
 	bool enteredPutDownArea = false;
 	
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -27,13 +29,13 @@ public class putDown : MonoBehaviour
 		if ((enteredPutDownArea == true) && Input.GetKeyDown(KeyCode.X) && thing1.gameObject.activeSelf == false)
 		{
 			stuff1.gameObject.SetActive(true);
-			//also play a sound eventually
+			audioPlayer.Play();
 		}
 		
 		if ((enteredPutDownArea == true) && Input.GetKeyDown(KeyCode.X) && thing2.gameObject.activeSelf == false)
 		{
 			stuff2.gameObject.SetActive(true);
-			//also play a sound eventually
+			audioPlayer.Play();
 		}
 	}
 }

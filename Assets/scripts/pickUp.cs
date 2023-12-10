@@ -7,6 +7,8 @@ public class pickUp : MonoBehaviour
 	public GameObject stuff;
 	bool enteredPickUpArea = false;
 	
+	public AudioSource audioPlayer;
+	
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		enteredPickUpArea = true;
@@ -22,7 +24,7 @@ public class pickUp : MonoBehaviour
 		if ((enteredPickUpArea == true) && Input.GetKeyDown(KeyCode.X))
 		{
 			stuff.gameObject.SetActive(false);
-			//also play a sound eventually
+			audioPlayer.Play();
 		}
 	}
 	
