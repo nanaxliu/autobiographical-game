@@ -80,7 +80,6 @@ public class dialogueManager : MonoBehaviour
 
 		varGameObject.GetComponent<player>().enabled = true;
 		
-		
 	}
 
 }

@@ -26,6 +26,8 @@ public class playNextDialogue : MonoBehaviour
 						if (diaDone.dialogueEnded == false)
 						{
 							nextDialogue.gameObject.SetActive(true);
+							
+							
 							gameObject.SetActive(false);
 						}
 				}
