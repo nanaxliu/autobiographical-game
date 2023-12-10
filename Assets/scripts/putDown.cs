@@ -26,13 +26,13 @@ public class putDown : MonoBehaviour
 	
 	void Update()
 	{
-		if ((enteredPutDownArea == true) && Input.GetKeyDown(KeyCode.X) && thing1.gameObject.activeSelf == false)
+		if ((enteredPutDownArea == true) && Input.GetKeyDown(KeyCode.X) && thing1.gameObject.activeSelf == false && stuff1.gameObject.activeSelf == false)
 		{
 			stuff1.gameObject.SetActive(true);
 			audioPlayer.Play();
 		}
 		
-		if ((enteredPutDownArea == true) && Input.GetKeyDown(KeyCode.X) && thing2.gameObject.activeSelf == false)
+		if ((enteredPutDownArea == true) && Input.GetKeyDown(KeyCode.X) && thing2.gameObject.activeSelf == false && stuff2.gameObject.activeSelf == false)
 		{
 			stuff2.gameObject.SetActive(true);
 			audioPlayer.Play();

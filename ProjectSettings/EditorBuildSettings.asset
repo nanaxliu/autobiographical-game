@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/closet.unity
     guid: 800366d79a3504999839fe65c0391552
+  - enabled: 1
+    path: Assets/Scenes/hallway2.unity
+    guid: 6f24419f1ca304b2e964af954f569939
   m_configObjects: {}

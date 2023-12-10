@@ -7,8 +7,14 @@ public class goToCloset : MonoBehaviour
 {
 	public string LevelIndex;
 	
+	public bool wentToCloset = false;
+	
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		SceneManager.LoadScene(LevelIndex, LoadSceneMode.Single);
+		if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("hallway"))
+		{
+			wentToCloset = true;
+			SceneManager.LoadScene(LevelIndex, LoadSceneMode.Single);
+		}
 	}
 }
