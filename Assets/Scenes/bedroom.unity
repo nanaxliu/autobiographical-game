@@ -900,6 +900,7 @@ MonoBehaviour:
   stuff1: {fileID: 408833550}
   stuff2: {fileID: 1626683370}
   dialogue: {fileID: 1012110696}
+  LevelIndex: hallway
 --- !u!61 &539404096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2047,7 +2048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64fe133e566044eeb58da0aef543551, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
 --- !u!58 &1320767217
 CircleCollider2D:
   m_ObjectHideFlags: 0

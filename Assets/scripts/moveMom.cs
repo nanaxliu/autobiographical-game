@@ -26,7 +26,6 @@ public class moveMom : MonoBehaviour
 		
 		if (lastDialogue.gameObject.activeSelf == true && diaDone.dialogueEnded == true)
 		{
-			Debug.Log("mom walk out of room");
 	        animator.SetBool("momWalking", true);
 		
 			transform.position += new Vector3(-5, 0, 0) * Time.deltaTime;
@@ -34,21 +33,10 @@ public class moveMom : MonoBehaviour
 			if (momm.transform.position.x < -13)
 			{
 				gameObject.SetActive(false);
+				
+				varGameObject.GetComponent<player>().enabled = true;
 			}
-		
-			//for(int i = 0; i > -1; i--)
-			//{
-				//transform.position += new Vector3(0, i, 0) * Time.deltaTime;
-			//}
-		
-			//for(int i = 0; i > -5; i--)
-			//{
-				//transform.position += new Vector3(i, 0, 0) * Time.deltaTime;
-			//}
-			
-			varGameObject.GetComponent<player>().enabled = true;
-		
-			//gameObject.SetActive(false);
+
 		}
 
     }

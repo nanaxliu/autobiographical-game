@@ -21,7 +21,6 @@ public class player : MonoBehaviour
 		Quaternion characterRotation = transform.localRotation;
 
         if (Input.GetKey(KeyCode.RightArrow)) {
-			Debug.Log("moving to the right");
             transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
 			
 			animator.SetBool("isWalking", true);
