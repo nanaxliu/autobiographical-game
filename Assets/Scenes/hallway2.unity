@@ -247,7 +247,7 @@ Transform:
   m_GameObject: {fileID: 24011384}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.168, y: 1.834, z: 0}
+  m_LocalPosition: {x: 5.688, y: 1.874, z: 0}
   m_LocalScale: {x: 12.5, y: 12.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -835,7 +835,7 @@ Transform:
   m_GameObject: {fileID: 433361953}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1232514, y: -0.41877, z: -0.81346345}
+  m_LocalPosition: {x: 1.643251, y: -0.37877, z: -0.81346345}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -887,7 +887,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.754717, g: 0.60875756, b: 0.629609, a: 1}
+  m_BackGroundColor: {r: 0.9803922, g: 0.94117653, b: 0.9490197, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1028,7 +1028,7 @@ Transform:
   m_GameObject: {fileID: 759983787}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1642458, y: 4.01069, z: -0.6630118}
+  m_LocalPosition: {x: 1.684246, y: 4.05069, z: -0.6630118}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1435,7 +1435,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 980892405
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -2115368524, guid: aa57cf201a29c4bb7b1ca3c53eb944d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1457,7 +1457,7 @@ Transform:
   m_GameObject: {fileID: 923615856}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 9.3553, y: 0.3353, z: 0.00000007557371}
+  m_LocalPosition: {x: 8.8753, y: 0.3753, z: 0.00000007557371}
   m_LocalScale: {x: 12.5, y: 12.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1913,7 +1913,7 @@ Transform:
   m_GameObject: {fileID: 1208568192}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.895, y: 2.524, z: 0}
+  m_LocalPosition: {x: -5.375, y: 2.564, z: 0}
   m_LocalScale: {x: 12.5, y: 12.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2004,7 +2004,7 @@ Transform:
   m_GameObject: {fileID: 1393201500}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.12, y: -0.4, z: -0.7084641}
+  m_LocalPosition: {x: 8.64, y: -0.36, z: -0.7084641}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2082,7 +2082,7 @@ Transform:
   m_GameObject: {fileID: 1481024111}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5026327, y: -1.6928471, z: -0.7875499}
+  m_LocalPosition: {x: 1.022633, y: -1.652847, z: -0.7875499}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2279,7 +2279,7 @@ Transform:
   m_GameObject: {fileID: 1518450094}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.53, y: -3.77, z: 0}
+  m_LocalPosition: {x: 0.05, y: -3.73, z: 0}
   m_LocalScale: {x: 12.5, y: 12.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2456,7 +2456,7 @@ Transform:
   m_GameObject: {fileID: 1669359018}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.48, y: -0.04, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 12.5, y: 12.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2472,7 +2472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1677986552}
   - component: {fileID: 1677986551}
-  - component: {fileID: 1677986550}
+  - component: {fileID: 1677986553}
   m_Layer: 0
   m_Name: 'leave room '
   m_TagString: Untagged
@@ -2480,19 +2480,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1677986550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677986549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 244be7697bc184f8f893b82903c6b074, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 185086872}
 --- !u!61 &1677986551
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2547,12 +2534,25 @@ Transform:
   m_GameObject: {fileID: 1677986549}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.69, y: -0.69, z: -0.81346345}
+  m_LocalPosition: {x: -8.17, y: -0.65, z: -0.81346345}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1677986553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677986549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 023d7683f0b0f47dd94a630e83dc91e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelIndex: xhay
 --- !u!1 &1726970206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2724,7 +2724,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 980892405
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -2115368524, guid: aa57cf201a29c4bb7b1ca3c53eb944d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2746,7 +2746,7 @@ Transform:
   m_GameObject: {fileID: 2038734475}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.3952, y: 0.3339, z: 0}
+  m_LocalPosition: {x: -8.8752, y: 0.3739, z: 0}
   m_LocalScale: {x: 12.5, y: 12.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2911,13 +2911,13 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 983999562}
+  - {fileID: 1669359020}
   - {fileID: 2038734477}
   - {fileID: 923615858}
   - {fileID: 1677986552}
   - {fileID: 433361954}
   - {fileID: 1393201503}
   - {fileID: 759983790}
-  - {fileID: 1669359020}
   - {fileID: 185086873}
   - {fileID: 1000907294}
   - {fileID: 190310970}
