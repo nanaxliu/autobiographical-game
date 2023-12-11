@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/goodbyeGZ.unity
     guid: 4731d63f96ca34eae80e3a35dd8278c1
+  - enabled: 1
+    path: Assets/Scenes/endScene.unity
+    guid: 15d514e870af04605a8f634fa654459d
   m_configObjects: {}

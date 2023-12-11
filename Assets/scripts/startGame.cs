@@ -13,15 +13,12 @@ public class startGame : MonoBehaviour
 		GameObject varGameObject = GameObject.FindWithTag("Player");
 
 		varGameObject.GetComponent<player>().enabled = false;
-		
-		if (Input.GetKeyDown(KeyCode.Space))
-		{
 			
-			FindObjectOfType<dialogueManager>().StartDialogue(dialogue);
+		FindObjectOfType<dialogueManager>().StartDialogue(dialogue);
 			
-			nextDialogue.gameObject.SetActive(true);
+		nextDialogue.gameObject.SetActive(true);
 		
-			gameObject.SetActive(false);
-		}
+		gameObject.SetActive(false);
+		
 	}
 }
