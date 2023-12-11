@@ -507,6 +507,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128529764}
   m_CullTransparentMesh: 1
+--- !u!1 &149688450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 149688452}
+  - component: {fileID: 149688451}
+  m_Layer: 0
+  m_Name: endtopdowndialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &149688451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149688450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a84fdb78f88407fae86c6269793247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: '  '
+  sentences:
+  - its time to say my goodbyes...
+--- !u!4 &149688452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149688450}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.020767737, y: -0.4618223, z: -0.15059522}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &185086871
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,8 +1115,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.42820024}
-  m_SizeDelta: {x: 18.2, y: 2.6}
+  m_AnchoredPosition: {x: 0, y: 0.08010006}
+  m_SizeDelta: {x: 18.2968, y: 3.6166}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &782489194
 MonoBehaviour:
@@ -2472,7 +2519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1677986552}
   - component: {fileID: 1677986551}
-  - component: {fileID: 1677986553}
+  - component: {fileID: 1677986554}
   m_Layer: 0
   m_Name: 'leave room '
   m_TagString: Untagged
@@ -2540,7 +2587,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1677986553
+--- !u!114 &1677986554
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2549,9 +2596,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1677986549}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 023d7683f0b0f47dd94a630e83dc91e8, type: 3}
+  m_Script: {fileID: 11500000, guid: a9638a97e0eca486cb23376a809ba527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 149688451}
+  diaDone: {fileID: 983999561}
   LevelIndex: xhay
 --- !u!1 &1726970206
 GameObject:
@@ -2929,3 +2978,4 @@ SceneRoots:
   - {fileID: 1744279664}
   - {fileID: 1208568195}
   - {fileID: 1649756051}
+  - {fileID: 149688452}

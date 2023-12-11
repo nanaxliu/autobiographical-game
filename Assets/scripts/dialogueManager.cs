@@ -35,7 +35,21 @@ public class dialogueManager : MonoBehaviour
 			varGameObject.GetComponent<topDownPlayer>().enabled = false;
 		}
 		
-		else
+		if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("bedroom"))
+		{
+			GameObject varGameObject = GameObject.FindWithTag("Player");
+
+			varGameObject.GetComponent<player>().enabled = false;
+		}
+		
+		if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("hallway"))
+		{
+			GameObject varGameObject = GameObject.FindWithTag("Player");
+
+			varGameObject.GetComponent<player>().enabled = false;
+		}
+		
+		if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("hallway2"))
 		{
 			GameObject varGameObject = GameObject.FindWithTag("Player");
 
@@ -94,7 +108,21 @@ public class dialogueManager : MonoBehaviour
 			varGameObject.GetComponent<topDownPlayer>().enabled = true;
 		}
 		
-		else
+		if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("bedroom"))
+		{
+			GameObject varGameObject = GameObject.FindWithTag("Player");
+
+			varGameObject.GetComponent<player>().enabled = true;
+		}
+		
+		if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("hallway"))
+		{
+			GameObject varGameObject = GameObject.FindWithTag("Player");
+
+			varGameObject.GetComponent<player>().enabled = true;
+		}
+		
+		if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("hallway2"))
 		{
 			GameObject varGameObject = GameObject.FindWithTag("Player");
 
