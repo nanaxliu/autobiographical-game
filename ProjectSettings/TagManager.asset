@@ -50,6 +50,12 @@ TagManager:
   - name: player
     uniqueID: 1585536195
     locked: 0
+  - name: luggage for closet
+    uniqueID: 125545345
+    locked: 0
+  - name: closet luggage items
+    uniqueID: 337883409
+    locked: 0
   - name: npc
     uniqueID: 3259092609
     locked: 0

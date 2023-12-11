@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a6cd0ebb734e94876972969aa1f87931
+guid: 692a432f2675a4bb6aab639082eb91b2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shirts and bottoms_0
+      name: topdownmcsprite_0
       rect:
         serializedVersion: 2
-        x: 92
-        y: 66
-        width: 14
-        height: 8
+        x: 93
+        y: 97
+        width: 23
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fa7d9230459c496e871a22b795c7592
-      internalID: 2143425600
+      spriteID: ba501b9ee894c4a86a4a750f6b370868
+      internalID: -819284295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shirts and bottoms_1
+      name: topdownmcsprite_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 64
-        width: 17
-        height: 31
+        x: 119
+        y: 97
+        width: 23
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,29 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9467df592c7bc49cc9b26cb010de95d2
-      internalID: -287802582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shirts and bottoms_2
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 60
-        width: 17
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2e6f6a5c1abb41fcb2d18e347dd4a0f
-      internalID: 462867965
+      spriteID: 1099b068198ab47b7aec333f0c2dadd1
+      internalID: -1409601777
       vertices: []
       indices: 
       edges: []
@@ -196,9 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      shirts and bottoms_0: -951018378
-      shirts and bottoms_1: 2143425600
-      shirts and bottoms_2: -287802582
+      topdownmcsprite_0: -819284295
+      topdownmcsprite_1: -1409601777
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

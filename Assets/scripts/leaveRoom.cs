@@ -15,14 +15,13 @@ public class leaveRoom : MonoBehaviour
 	{
 		if (stuff1.gameObject.activeSelf == false || stuff2.gameObject.activeSelf == false)
 		{
-			GameObject varGameObject = GameObject.FindWithTag("Player");
+			//GameObject varGameObject = GameObject.FindWithTag("Player");
 
-			varGameObject.GetComponent<player>().enabled = false;
+			//varGameObject.GetComponent<player>().enabled = false;
 			
 			FindObjectOfType<dialogueManager>().StartDialogue(dialogue);
-			
 
-			varGameObject.GetComponent<player>().enabled = true;
+			//varGameObject.GetComponent<player>().enabled = true;
 		}
 		
 		if (stuff1.gameObject.activeSelf == true || stuff2.gameObject.activeSelf == true)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class dialogueManager : MonoBehaviour
 {
@@ -27,9 +28,19 @@ public class dialogueManager : MonoBehaviour
 	{
 		dialogueEnded = false;
 		
-		GameObject varGameObject = GameObject.FindWithTag("Player");
+		if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("closet"))
+		{
+			GameObject varGameObject = GameObject.FindWithTag("Player");
 
-		varGameObject.GetComponent<player>().enabled = false;
+			varGameObject.GetComponent<topDownPlayer>().enabled = false;
+		}
+		
+		else
+		{
+			GameObject varGameObject = GameObject.FindWithTag("Player");
+
+			varGameObject.GetComponent<player>().enabled = false;
+		}
 		
 		animator.SetBool("IsOpen", true);
 		
@@ -76,9 +87,20 @@ public class dialogueManager : MonoBehaviour
 		
 		dialogueEnded = true;
 		
-		GameObject varGameObject = GameObject.FindWithTag("Player");
+		if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("closet"))
+		{
+			GameObject varGameObject = GameObject.FindWithTag("Player");
 
-		varGameObject.GetComponent<player>().enabled = true;
+			varGameObject.GetComponent<topDownPlayer>().enabled = true;
+		}
+		
+		else
+		{
+			GameObject varGameObject = GameObject.FindWithTag("Player");
+
+			varGameObject.GetComponent<player>().enabled = true;
+		}
+
 		
 	}
 
