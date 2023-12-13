@@ -2241,7 +2241,7 @@ MonoBehaviour:
   animator: {fileID: 1451029942}
   dialogueEnded: 0
   IsRunning: 0
-  typeSpeed: 0.03
+  typeSpeed: 0.3
 --- !u!4 &1235734116
 Transform:
   m_ObjectHideFlags: 0
