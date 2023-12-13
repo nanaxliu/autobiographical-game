@@ -1620,6 +1620,8 @@ MonoBehaviour:
   dialogueText: {fileID: 782489194}
   animator: {fileID: 128529766}
   dialogueEnded: 0
+  IsRunning: 0
+  typeSpeed: 0.03
 --- !u!4 &983999562
 Transform:
   m_ObjectHideFlags: 0
@@ -2378,6 +2380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 128529764}
   dialogueClose: -10
+  diaDone: {fileID: 983999561}
 --- !u!1 &1649756049
 GameObject:
   m_ObjectHideFlags: 0

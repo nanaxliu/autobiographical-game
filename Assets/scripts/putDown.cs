@@ -16,12 +16,18 @@ public class putDown : MonoBehaviour
 	
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		enteredPutDownArea = true;
+		if (collision.gameObject.CompareTag("Player"))
+		{
+			enteredPutDownArea = true;
+		}
 	}
 	
 	private void OnTriggerExit2D(Collider2D other)
 	{
-		enteredPutDownArea = false;
+		if (other.gameObject.CompareTag("Player"))
+		{
+			enteredPutDownArea = false;
+		}
 	}
 	
 	void Update()

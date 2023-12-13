@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class activatePlayer : MonoBehaviour
 {
-    void Update()
+    void Start()
     {
 		GameObject varGameObject = GameObject.FindWithTag("Player");
 

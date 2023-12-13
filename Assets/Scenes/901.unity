@@ -608,6 +608,8 @@ MonoBehaviour:
   dialogueText: {fileID: 615870119}
   animator: {fileID: 981459601}
   dialogueEnded: 0
+  IsRunning: 0
+  typeSpeed: 0.03
 --- !u!4 &925582125
 Transform:
   m_ObjectHideFlags: 0
@@ -755,8 +757,8 @@ MonoBehaviour:
   name: ' '
   sentences:
   - you were my favorite place, always surrounding me with my favorite people.
-  - "i\u2019ll do the rest of my growing up somewhere else, but it was truly a pleasure
-    spending the first half of my childhood here."
+  - "i\u2019ll do the rest of my growing up somewhere else, but it was so magical
+    getting to spend the first half of my childhood here."
   - "thank you for the warmth and safety you brought me, i\u2019ll miss you dearly. "
   - goodbye, apartment 901.
 --- !u!4 &1102507970
@@ -999,6 +1001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 981459600}
   dialogueClose: -10
+  diaDone: {fileID: 925582124}
 --- !u!1 &1789722272
 GameObject:
   m_ObjectHideFlags: 0

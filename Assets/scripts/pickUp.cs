@@ -7,6 +7,7 @@ public class pickUp : MonoBehaviour
 	public GameObject stuff;
 	bool enteredPickUpArea = false;
 	
+	public Dialogue dialogue;
 	public AudioSource audioPlayer;
 	
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -25,6 +26,8 @@ public class pickUp : MonoBehaviour
 		{
 			stuff.gameObject.SetActive(false);
 			audioPlayer.Play();
+			FindObjectOfType<dialogueManager>().StartDialogue(dialogue);
+			gameObject.SetActive(false);
 		}
 	}
 	

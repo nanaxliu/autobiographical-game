@@ -123,6 +123,54 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &286787541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 286787543}
+  - component: {fileID: 286787542}
+  m_Layer: 0
+  m_Name: dialogue for shirts and bottoms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &286787542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286787541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a84fdb78f88407fae86c6269793247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: '  '
+  sentences:
+  - 'you pick up all of your shirts and bottoms, each hand picked by mom. '
+  - she seems to like putting you in shirts with cute prints on them and frilly skirts.
+--- !u!4 &286787543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286787541}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.68738693, y: -0.09834803, z: 0.758732}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &287794951
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,6 +415,8 @@ MonoBehaviour:
   dialogueText: {fileID: 313623101}
   animator: {fileID: 1451407694}
   dialogueEnded: 0
+  IsRunning: 0
+  typeSpeed: 0.03
 --- !u!4 &328615758
 Transform:
   m_ObjectHideFlags: 0
@@ -392,7 +442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 332108003}
   - component: {fileID: 332108002}
-  - component: {fileID: 332108001}
+  - component: {fileID: 332108004}
   m_Layer: 0
   m_Name: leave room
   m_TagString: Untagged
@@ -400,22 +450,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &332108001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332108000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 704ab53192ca045f192afd0037bd4c94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stuff1: {fileID: 1536996314}
-  stuff2: {fileID: 701199056}
-  dialogue: {fileID: 486992555}
-  LevelIndex: hallway2
 --- !u!61 &332108002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -476,6 +510,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &332108004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332108000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc4925abef4a45c2ad6206ebefb2696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stuff1: {fileID: 1536996314}
+  stuff2: {fileID: 701199056}
+  dialogue: {fileID: 486992555}
+  LevelIndex: hallway2
 --- !u!1 &346468471
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 1451407692}
   dialogueClose: -10
+  diaDone: {fileID: 328615757}
 --- !u!1 &388575322
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,6 +752,55 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.186, y: 3.686, z: 0}
   m_LocalScale: {x: 12.5, y: 12.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &389197875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 389197877}
+  - component: {fileID: 389197876}
+  m_Layer: 0
+  m_Name: dialogue for jackets and socks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &389197876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389197875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a84fdb78f88407fae86c6269793247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: '  '
+  sentences:
+  - you pick up all of your jackets, coats, and socks.
+  - although it is usually warm enough in guangzhou without a coat, mom bought you
+    a couple of warmer ones for the cold winters in seattle.
+--- !u!4 &389197877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389197875}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.68738693, y: -0.09834803, z: 0.758732}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1437,6 +1537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stuff: {fileID: 1979964303}
+  dialogue: {fileID: 286787542}
   audioPlayer: {fileID: 1937361106}
 --- !u!61 &1254712860
 BoxCollider2D:
@@ -1470,7 +1571,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5437844, y: -0.50350386}
+  m_Offset: {x: 0.5437844, y: -1.1581972}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1481,7 +1582,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7985983, y: 2.0875692}
+  m_Size: {x: 0.7985983, y: 1.1661488}
   m_EdgeRadius: 0
 --- !u!4 &1254712861
 Transform:
@@ -1958,6 +2059,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1615565815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1615565817}
+  - component: {fileID: 1615565816}
+  m_Layer: 0
+  m_Name: dialogue for leave room
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1615565816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615565815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a84fdb78f88407fae86c6269793247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: '  '
+  sentences:
+  - i should be done packing everything, i think i'll leave now.
+--- !u!4 &1615565817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615565815}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.106126525, y: 0.04092866, z: -0.39678735}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1625239224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,6 +2214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stuff: {fileID: 388575322}
+  dialogue: {fileID: 389197876}
   audioPlayer: {fileID: 1937361106}
 --- !u!61 &1629706125
 BoxCollider2D:
@@ -2099,7 +2248,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5437844, y: 2.9807434}
+  m_Offset: {x: 0.5437844, y: 3.562693}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2110,7 +2259,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7180376, y: 2.7723331}
+  m_Size: {x: 0.7180376, y: 1.6084337}
   m_EdgeRadius: 0
 --- !u!4 &1629706126
 Transform:
@@ -2340,6 +2489,7 @@ GameObject:
   - component: {fileID: 1915565552}
   - component: {fileID: 1915565551}
   - component: {fileID: 1915565553}
+  - component: {fileID: 1915565554}
   m_Layer: 0
   m_Name: luggage put down
   m_TagString: Untagged
@@ -2424,6 +2574,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6987813, y: 1.0805607}
   m_EdgeRadius: 0
+--- !u!114 &1915565554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915565550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ab3077504754bc6bdc57ee44260789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thing1: {fileID: 388575322}
+  thing2: {fileID: 1979964303}
+  stuff1: {fileID: 1536996314}
+  stuff2: {fileID: 701199056}
+  dialogue: {fileID: 1615565816}
 --- !u!1 &1937361105
 GameObject:
   m_ObjectHideFlags: 0
@@ -2784,3 +2951,6 @@ SceneRoots:
   - {fileID: 1826751096}
   - {fileID: 486992556}
   - {fileID: 332108003}
+  - {fileID: 1615565817}
+  - {fileID: 286787543}
+  - {fileID: 389197877}

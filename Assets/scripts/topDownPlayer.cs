@@ -97,6 +97,9 @@ public class topDownPlayer : MonoBehaviour
 			animator.SetBool("isWalking", false);
 			animator.SetBool("walkingUp", false);
 			animator.SetBool("walkingDown", true);
+			animator.SetBool("idleRight", false);
+			animator.SetBool("idleLeft", false);
+			animator.SetBool("idleUp", false);
 			characterRotation.x = 0f;
 			characterRotation.z = 0f;
 			characterRotation.y = 0f;
